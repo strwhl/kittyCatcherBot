@@ -6,8 +6,7 @@ import time
 from decouple import config
 
 openai.api_key = config('openai_api_key', default = '')
-telebot.TeleBot = config('telegram_api_key', default = '')
-bot = telebot.TeleBot
+bot = telebot.TeleBot('6111963721:AAF-PVTB26zW6vKSAXAZQwEpoHtFcgRG-K8')
 
 # Logging
 if not os.path.exists('/tmp/bot_log/'):
