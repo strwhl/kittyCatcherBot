@@ -4,7 +4,7 @@ import logging
 import os
 import time
 
-openai.api_key = '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'
+openai.api_key = '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'
 bot = telebot.TeleBot('5741763831:AAFS08A5zjTZM7QuzlPFmFwLX_GkAEJODuY')
 
 # Logging
