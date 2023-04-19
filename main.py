@@ -5,7 +5,7 @@ import os
 import time
 
 openai.api_key = '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'
-bot = telebot.TeleBot('6111963721:AAF-PVTB26zW6vKSAXAZQwEpoHtFcgRG-K8')
+bot = telebot.TeleBot('5741763831:AAFS08A5zjTZM7QuzlPFmFwLX_GkAEJODuY')
 
 # Logging
 if not os.path.exists('/tmp/bot_log/'):
