@@ -3,10 +3,10 @@ import telebot
 import logging
 import os
 import time
-from decouple import config
+from settings import OPENAI_API_KEY
 
-openai.api_key = config('openai_api_key', default = '')
-bot = telebot.TeleBot('6111963721:AAF-PVTB26zW6vKSAXAZQwEpoHtFcgRG-K8')
+openai.api_key = OPENAI_API_KEY
+bot = telebot.TeleBot('5741763831:AAFS08A5zjTZM7QuzlPFmFwLX_GkAEJODuY')
 
 # Logging
 if not os.path.exists('/tmp/bot_log/'):
