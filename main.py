@@ -5,7 +5,7 @@ import os
 import time
 from decouple import config
 
-openai.api_key = config('openai_api_key', default = '')
+openai.api_key = os.environ['OPENAI_API_KEY']
 bot = telebot.TeleBot('6111963721:AAF-PVTB26zW6vKSAXAZQwEpoHtFcgRG-K8')
 
 # Logging
