@@ -3,9 +3,10 @@ import telebot
 import logging
 import os
 import time
+from decouple import config
 
-openai.api_key = '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'
-bot = telebot.TeleBot('5741763831:AAFS08A5zjTZM7QuzlPFmFwLX_GkAEJODuY')
+openai.api_key = config('openai_api_key', default='')
+bot = telebot.TeleBot('telegram_api_key', default='')
 
 # Logging
 if not os.path.exists('/tmp/bot_log/'):
