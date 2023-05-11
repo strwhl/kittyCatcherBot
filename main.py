@@ -19,7 +19,7 @@ logging.basicConfig(filename='/tmp/bot_log/log.txt', level=logging.ERROR,
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.reply_to(message,
-                 'Привет!\nЯ ChatGPT Telegram Bot\U0001F916\nЗадай мне любой вопрос и я постараюсь на него ответиь')
+                 'Привет!\nЯ ChatGPT Telegram Bot\U0001F916\nЗадай мне любой вопрос и я постараюсь на него ответить')
 
 
 def generate_response(prompt):
